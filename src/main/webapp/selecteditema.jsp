@@ -2,7 +2,6 @@
 <%@page import="com.entity.viewlist"%>
 <%@page import="com.dao.DAO2"%>
 <%@page import="java.util.Base64.Decoder"%>
-<%@page import="org.apache.tomcat.util.codec.DecoderException"%>
 <%@page import="java.sql.*,java.io.*,java.text.*,java.util.*" %> 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
