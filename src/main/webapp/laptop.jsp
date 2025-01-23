@@ -1,6 +1,5 @@
-<%@page import="com.entity.laptop"%>
+<%@page import="com.entity.Kitchen"%>
 <%@page import="com.dao.DAO3"%>
-<%@page import="com.entity.tv"%>
 <%@page import="java.util.List"%>
 <%@page import="com.conn.DBConnect"%>
 <%@page import="java.sql.*,java.io.*,java.text.*,java.util.*" %> 
@@ -41,8 +40,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 	<div class = "row">
 	<%
 		DAO3 dao = new DAO3(DBConnect.getConn());
-		List<laptop> listv = dao.getAlllaptop();
-		for(laptop v : listv)
+		List<Kitchen> listKitchen = dao.getAllkitchen();
+		for(Kitchen v : listKitchen)
 		{%>
 		<div class = "col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12 border">
 		<div class = "container" style="background-color: white">

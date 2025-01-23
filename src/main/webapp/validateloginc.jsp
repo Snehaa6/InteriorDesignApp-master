@@ -3,18 +3,14 @@
 <%@page import="com.dao.DAO2"%>
 <%@page import="com.entity.customer"%>
 <%@page import="com.conn.DBConnect"%>
-<%@page import="com.dao.GetAllDao"%>
-<%
-String Total3 = request.getParameter("Total");
-%>
+<%@page import="com.dao.DAO"%>
+<% String Total3 = request.getParameter("Total"); %>
 	
-	<input type = "hidden" name = "Total" value =<%=Total3%> >
+	<input type = "hidden" name = "Total" value =<%=Total3 %> >
 	
-	<%
-		String CusName3 = request.getParameter("CusName");
-		%>
+	<% String CusName3 = request.getParameter("CusName"); %>
 	
-	<input type = "hidden" name = "CusName" value =<%=CusName3%> >
+	<input type = "hidden" name = "CusName" value =<%=CusName3 %> >
 	
 	
 	
@@ -39,6 +35,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </head>
 <body>
 <%
+
 String Ab = null;
 String N = null;
 if(request.getCookies()!=null)
@@ -49,16 +46,16 @@ if(request.getCookies()!=null)
 	{
 		if(rc[i].getName().equals("cname")==true)
 		{
-	flag=1;
-	Ab = rc[i].getValue().toString();
-	
-	
-	GetAllDao daozzz = new GetAllDao(DBConnect.getConn());
-	List<customer> listbbb = daozzz.getCustomer(Ab);
-	for(customer ccc : listbbb)
-	{
-		N = ccc.getName();	
-	}
+			flag=1;
+			Ab = rc[i].getValue().toString();
+			
+			
+			DAO daozzz = new DAO(DBConnect.getConn());
+			List<customer> listbbb = daozzz.getCustomer(Ab);
+			for(customer ccc : listbbb)
+			{
+				N = ccc.getName();	
+			}
 		
 		}
 	}
@@ -76,6 +73,8 @@ for(cart v : listq)
 	
 	tcqty = tcqty + v.getPquantity();
 }
+
+
 %>
 
 </body>

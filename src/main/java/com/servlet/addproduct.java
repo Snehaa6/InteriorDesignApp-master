@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.conn.DBConnect;
-import com.dao.GetAllDao;
-import com.dao.GetAllDao;
+import com.dao.DAO;
+import com.dao.DAO;
 
 
 
@@ -36,7 +36,7 @@ public class addproduct extends HttpServlet {
 		
 		
 		try{
-			GetAllDao dao =new GetAllDao(DBConnect.getConn());
+			DAO dao =new DAO(DBConnect.getConn());
 			
 			
 		 	if(dao.addproduct(request) > 0)

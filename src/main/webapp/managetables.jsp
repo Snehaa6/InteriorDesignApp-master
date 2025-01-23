@@ -1,5 +1,5 @@
 <%@page import="com.dao.DAO3"%>
-<%@page import="com.entity.tv"%>
+<%@page import="com.entity.Bedroom"%>
 <%@page import="java.util.List"%>
 <%@page import="com.conn.DBConnect"%>
 <%@page import="java.sql.*,java.io.*,java.text.*,java.util.*" %> 

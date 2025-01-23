@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.conn.DBConnect;
-import com.dao.GetAllDao;
+import com.dao.DAO;
 import com.entity.customer;
 
 
@@ -32,7 +32,7 @@ public class deletecustomer extends HttpServlet{
 		c.setName(Name);
 		c.setEmail_Id(Email_Id);
 		
-		GetAllDao dao = new GetAllDao(DBConnect.getConn());
+		DAO dao = new DAO(DBConnect.getConn());
 		
 		boolean f = dao.deleteCustomer(c);
 		

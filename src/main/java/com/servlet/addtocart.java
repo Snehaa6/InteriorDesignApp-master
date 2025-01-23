@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.conn.DBConnect;
-import com.dao.GetAllDao;
+import com.dao.DAO;
 import com.dao.DAO2;
 import com.dao.DAO3;
 import com.entity.cart;
 import com.entity.customer;
 import com.entity.usermaster;
-import com.dao.GetAllDao;
+import com.dao.DAO;
 
 
 

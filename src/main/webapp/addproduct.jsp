@@ -2,7 +2,7 @@
 <%@page import="com.entity.brand"%>
 <%@page import="java.util.List"%>
 <%@page import="com.conn.DBConnect"%>
-<%@page import="com.dao.GetAllDao"%>
+<%@page import="com.dao.DAO"%>
 <%@page import="java.sql.*"%>
 
 
@@ -80,16 +80,13 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
 			<h4><b class="a">Select Brand:</b> </h4>
 			<h2><select name="bname" class = "c"> 
-		<%
- 		GetAllDao dao = new GetAllDao(DBConnect.getConn());
- 			List<brand> listb = dao.getAllbrand();
- 			for(brand b : listb)
- 				{
- 		%>
-				<option><%=b.getBname()%></option>
-			  <%
-			  }
-			  %>
+		<% 
+			DAO dao = new DAO(DBConnect.getConn());
+			List<brand> listb = dao.getAllbrand();
+			for(brand b : listb)
+				{%>
+				<option><%= b.getBname() %></option>
+			  <%}%>
 
 						</select></h2> 
 						
@@ -99,11 +96,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 			 <h2><select name="cname" class = "c">
 	
 		<%
-			dao = new GetAllDao(DBConnect.getConn());
-				List<category> listc = dao.getAllcategory();
-				for(category c : listc)
-					{
-			%>	
+			dao = new DAO(DBConnect.getConn());
+			List<category> listc = dao.getAllcategory();
+			for(category c : listc)
+				{%>	
 				<option><%= c.getCname() %></option>
 			  <%}%>
 

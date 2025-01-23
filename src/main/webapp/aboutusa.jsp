@@ -30,21 +30,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 	<div style="background-color: #ebe9eb">
 	<br>
 	<center>
-	<h2>Be Smart</h2>
-	<h2><b>With Smart Devices</b></h2>
+	<h2>Be Attractive</h2>
+	<h2><b>With Jaw Dropping Interior Designs</b></h2>
 	<br>
 	</center>
 	</div>
 	<br>
 	<center>
-	<p>Online Ecommerce Project, consectetur adipisicing<br> 
-	elit, sed do eiusmod tempor incididunt ut labore <br>
-	et dolore magna aliqua. Ut enim ad minim veniam, <br>
-	quis nostrud exercitation ullamco laboris nisi ut <br>
-	aliquip ex ea comml consequat. Duis aute irure <br>
-	dolor in reprehenderit in voluptate velit esse <br>
-	cillum dolore eu fugiat nulla pariatur. Excepteur <br>
-	sint occaecat cupidatat non proident sunt in culpa</p>
+	<p>If you’re not happy, we’re not happy. <br>
+	We know designing your home can be an intimidating experience,<br>
+	if you’re not happy with your design for whatever reason,<br>
+	let us know, and we’ll make it right.</p>
 	<img src = "images/aboutus2.jpg" height=450px width = 1200px class= "imgh">
 <br>
 

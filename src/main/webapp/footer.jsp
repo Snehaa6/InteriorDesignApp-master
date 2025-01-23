@@ -11,10 +11,8 @@
 		<div class = "col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12">
 			<div class = "container" style="background-color: white">
 			<center>
-				<h2>Online Electronic Store</h2>
-				<p>Lorem ipsum dolor sit amet consl adipisi 
-				elit, sed do eiusmod templ incididunt ut 
-				labore</p>
+				<h2>Online Interior Design</h2>
+				<p>The Best a family can expect</p>
 			</center>
 			</div>
 		</div>
@@ -35,10 +33,9 @@
 			<div class = "container" style="background-color: white">
 			<center>
 				<h2>Contact Info</h2>
-				<p>Address: Your Address Goes Here. </p>
+				<p>Address: Kamothe. </p>
 				<p>Phone/Fax: 0123456789</p>
-				<p>Email: demo@example.com</p>
-				<p>demo@example.com</p>
+				<p>Email: Sneha123@gmail.com</p>
 			</center>
 			</div>
 		</div>
@@ -49,7 +46,7 @@
 	</div>
 	</div>
 	<br>
-	<p>© 2022 Online Electronic Shopping Made By Swapnil Bamble.</p>
+	<p>© 2025 Online Interior Design Made By Sneha.</p>
 </center>
 
 

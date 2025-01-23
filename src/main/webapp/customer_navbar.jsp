@@ -1,14 +1,10 @@
-	<%
-	String Total2 = request.getParameter("Total");
-	%>
+	<% String Total2 = request.getParameter("Total"); %>
 	
-	<input type = "hidden" name = "Total" value =<%=Total2%> >
+	<input type = "hidden" name = "Total" value =<%=Total2 %> >
 	
-	<%
-		String CusName2 = request.getParameter("CusName");
-		%>
+	<% String CusName2 = request.getParameter("CusName"); %>
 	
-	<input type = "hidden" name = "CusName" value =<%=CusName2%> >
+	<input type = "hidden" name = "CusName" value =<%=CusName2 %> >
 	
 	
 	
@@ -45,10 +41,10 @@
 	
 	<a href="categoryc.jsp" class="w3-bar-item w3-button" >View Category</a>&ensp;
 	
-	<a href="tvc.jsp" class="w3-bar-item w3-button">Tv</a>&ensp;
-	<a href="laptopc.jsp" class="w3-bar-item w3-button">Laptop</a>&ensp;
-	<a href="mobilec.jsp" class="w3-bar-item w3-button">Mobile</a>&ensp;
-	<a href="watchc.jsp" class="w3-bar-item w3-button">Watch</a>&ensp;
+	<a href="tvc.jsp" class="w3-bar-item w3-button">Bedroom</a>&ensp;
+	<a href="laptopc.jsp" class="w3-bar-item w3-button">Kitchen</a>&ensp;
+	<a href="mobilec.jsp" class="w3-bar-item w3-button">Hall</a>&ensp;
+	<a href="watchc.jsp" class="w3-bar-item w3-button">Bathroom</a>&ensp;
 	
 	<a href="viewproductc.jsp" class="w3-bar-item w3-button" >View All Product</a>&ensp;
 	

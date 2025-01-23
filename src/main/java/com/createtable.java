@@ -53,7 +53,7 @@ public static void insert() throws ClassNotFoundException, SQLException {
 		
 		Connection connection= getConnection();
 		
-		String sql = "insert into admin values('admin','admin')";
+		String sql = "insert into admin values('dms','dms')";
 	
 		PreparedStatement ps = connection.prepareStatement(sql);
 		

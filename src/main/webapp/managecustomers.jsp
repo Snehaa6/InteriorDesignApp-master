@@ -1,7 +1,7 @@
 <%@page import="com.entity.customer"%>
 <%@page import="java.util.List"%>
 <%@page import="com.conn.DBConnect"%>
-<%@page import="com.dao.GetAllDao"%>
+<%@page import="com.dao.DAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -47,11 +47,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 		<tbodY>
 		
 		<%
-				GetAllDao dao = new GetAllDao(DBConnect.getConn());
-					List<customer> list = dao.getAllCustomer();
-					for(customer c : list)
-					{
-				%>
+			DAO dao = new DAO(DBConnect.getConn());
+			List<customer> list = dao.getAllCustomer();
+			for(customer c : list)
+			{%>
 			<tr>
 				<td style='border: 1px solid ; text-align: center'><%= c.getName() %></td>
 				<td style='border: 1px solid ; text-align: center'><%= c.getPassword()%></td>

@@ -5,27 +5,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.jar.Attributes.Name;
 
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-
-import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.disk.DiskFileItemFactory;
-import org.apache.commons.fileupload.servlet.ServletFileUpload;
-
-import com.entity.Product;
+import com.entity.Bathroom;
+import com.entity.Bedroom;
+import com.entity.Hall;
+import com.entity.Kitchen;
 import com.entity.cart;
-import com.entity.customer;
-import com.entity.laptop;
-import com.entity.mobile;
-import com.entity.orders;
 import com.entity.order_details;
-import com.entity.tv;
-import com.entity.usermaster;
-import com.entity.viewlist;
-import com.entity.watch;
-import com.utility.MyUtilities;
+import com.entity.orders;
 
 
 
@@ -37,22 +24,22 @@ public class DAO3 {
 	}
 	
 	
-	// view tv
+	// view Bedroom
 	
-	public List<tv> getAlltv(){
-		List<tv> listv = new ArrayList<tv>();
+	public List<Bedroom> getAllbedroom(){
+		List<Bedroom> listv = new ArrayList<Bedroom>();
 		
-		tv v = null;
+		Bedroom v = null;
 		
 		try {
-			String sql = "select * from tv";
+			String sql = "select * from bedroom";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			
 			ResultSet rs = ps.executeQuery();
 			
 			while(rs.next())
 			{
-				v = new tv();
+				v = new Bedroom();
 				v.setBname(rs.getString(1));
 				v.setCname(rs.getString(2));
 				v.setPname(rs.getString(3));
@@ -72,22 +59,22 @@ public class DAO3 {
 			return listv;
 		}
 		
-	// view laptop
+	// view Kitchen
 	
-		public List<laptop> getAlllaptop(){
-			List<laptop> listv = new ArrayList<laptop>();
+		public List<Kitchen> getAllkitchen(){
+			List<Kitchen> listv = new ArrayList<Kitchen>();
 			
-			laptop v = null;
+			Kitchen v = null;
 			
 			try {
-				String sql = "select * from laptop";
+				String sql = "select * from kitchen";
 				PreparedStatement ps = conn.prepareStatement(sql);
 				
 				ResultSet rs = ps.executeQuery();
 				
 				while(rs.next())
 				{
-					v = new laptop();
+					v = new Kitchen();
 					v.setBname(rs.getString(1));
 					v.setCname(rs.getString(2));
 					v.setPname(rs.getString(3));
@@ -107,22 +94,22 @@ public class DAO3 {
 				return listv;
 			}
 
-		// view mobile
+		// view Hall
 		
-			public List<mobile> getAllmobile(){
-				List<mobile> listv = new ArrayList<mobile>();
+			public List<Hall> getAllhall(){
+				List<Hall> listv = new ArrayList<Hall>();
 				
-				mobile v = null;
+				Hall v = null;
 				
 				try {
-					String sql = "select * from mobile";
+					String sql = "select * from hall";
 					PreparedStatement ps = conn.prepareStatement(sql);
 					
 					ResultSet rs = ps.executeQuery();
 					
 					while(rs.next())
 					{
-						v = new mobile();
+						v = new Hall();
 						v.setBname(rs.getString(1));
 						v.setCname(rs.getString(2));
 						v.setPname(rs.getString(3));
@@ -142,22 +129,22 @@ public class DAO3 {
 					return listv;
 				}
 			
-			// view watch
+			// view Bathroom
 			
-			public List<watch> getAllwatch(){
-				List<watch> listv = new ArrayList<watch>();
+			public List<Bathroom> getAllbathroom(){
+				List<Bathroom> listv = new ArrayList<Bathroom>();
 				
-				watch v = null;
+				Bathroom v = null;
 				
 				try {
-					String sql = "select * from watch";
+					String sql = "select * from bathroom";
 					PreparedStatement ps = conn.prepareStatement(sql);
 					
 					ResultSet rs = ps.executeQuery();
 					
 					while(rs.next())
 					{
-						v = new watch();
+						v = new Bathroom();
 						v.setBname(rs.getString(1));
 						v.setCname(rs.getString(2));
 						v.setPname(rs.getString(3));

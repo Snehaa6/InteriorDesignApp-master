@@ -17,9 +17,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </style>
 </head>
 <body>
-<%
-String fail = request.getParameter("msgf");
-%>
+<%String fail = request.getParameter("msgf"); %>
 
 
 <form action = "" method = "post">

@@ -28,7 +28,7 @@
 	
 	</div>
 	<center>
-	<b class="w3-wide" style="width:250px"> <h3><b>Online Electronic Shopping</b></h3></b>
+	<b class="w3-wide" style="width:250px"> <h3><b>Online Interior Design</b></h3></b>
 	
 	<div class=" w3-large w3-text-grey" style="font-weight:bold">
 	
@@ -36,10 +36,10 @@
 	
 	<a href="categorya.jsp" class="w3-bar-item w3-button"  >View Category</a>&ensp;
 	
-	<a href="tva.jsp" class="w3-bar-item w3-button">Tv</a>&ensp;
-	<a href="laptopa.jsp" class="w3-bar-item w3-button">Laptop</a>&ensp;
-	<a href="mobilea.jsp" class="w3-bar-item w3-button">Mobile</a>&ensp;
-	<a href="watcha.jsp" class="w3-bar-item w3-button">Watch</a>&ensp;
+	<a href="tva.jsp" class="w3-bar-item w3-button">Bedroom</a>&ensp;
+	<a href="laptopa.jsp" class="w3-bar-item w3-button">Kitchen</a>&ensp;
+	<a href="mobilea.jsp" class="w3-bar-item w3-button">Hall</a>&ensp;
+	<a href="watcha.jsp" class="w3-bar-item w3-button">Bathroom</a>&ensp;
 	
 	<a href="viewproducta.jsp" class="w3-bar-item w3-button"  >View All Product</a>&ensp;
 	
